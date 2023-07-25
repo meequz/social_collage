@@ -1,6 +1,10 @@
 from PIL import Image
 
 
+__version__ = '0.9.0'
+__author__ = 'Mikhail Varantsou'
+
+
 BG_COLOR = (255, 255, 255, 255)
 SPACE_SHARE = 150
 
