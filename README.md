@@ -11,20 +11,22 @@ pip install social_collage
 ```
 import social_collage
 
-images = [...]
+images = [list of pil images]
 collage = social_collage.collage_5_1(images)
-collage.save(...)
+collage.save(path to save)
 ```
+Here `social_collage.collage_5_1` is a function that makes the collage. It accepts collection of PIL images and returns a collage as another PIL image.
+
 Currently available collage functions are: `collage_3_1`, `collage_4_1`, `collage_4_2`, `collage_5_1`.
 
 Arguments, applicable to any collage function:
 
- - `images` - list of PIL objects
+ - `images` - list of PIL image objects
  - `ratio=7/4` - required ratio of each image inside the collage. Default value is different for each function
  - `bgcolor=(255, 255, 255, 255)` - color of the background in RGBA format
  - `spaceshare=150` - share of the first image width to use as a space size. 0 or None means no space between images
 
-## Example
+## Full example
 *replace path with your own, or use files from "package/example_images"*
 ```
 import glob
