@@ -10,6 +10,7 @@ setup(
     name='social_collage',
     version='0.9.3',
     packages=['social_collage'],
+    package_data={'social_collage': ['example_images/*.jpg']},
     description='Create image collages in social networks style',
     long_description=long_description,
     long_description_content_type='text/markdown',

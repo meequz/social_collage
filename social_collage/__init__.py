@@ -1,3 +1,6 @@
+import glob
+from pathlib import Path
+
 from PIL import Image
 
 
@@ -165,3 +168,17 @@ def collage_5_1(images, ratio=7/4, bgcolor=BG_COLOR, spaceshare=SPACE_SHARE):
     clg.paste(crimg4, (btm_img_w + space * 2, crimg0_h + btm_img_h + space * 3))
 
     return clg
+
+
+def example():
+    # Read image files into a list of PIL objects
+    dirc = Path(__file__).resolve(strict=True).parent / 'example_images'
+    imgs = []
+    for imgpath in sorted(glob.glob(str(dirc / '*.jpg'))):
+        imgs.append(Image.open(imgpath))
+
+    # Send list of PIL images to a collage function
+    collage = collage_5_1(imgs)
+
+    # Show the returned PIL image containing the resulting collage
+    collage.show()
