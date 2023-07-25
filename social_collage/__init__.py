@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-__version__ = '0.9.2'
+__version__ = '0.9.3'
 __author__ = 'Mikhail Varantsou'
 
 
@@ -27,7 +27,7 @@ def _crop(img, ratio=1):
 
 def _prepare_imgs(images, length):
     if len(images) < length:
-        raise ValueError(f'Not enough images, have to be {length}')
+        raise ValueError(f'Provided {len(images)} images, have to be {length}')
 
     converted = [img.convert(mode='RGBA') for img in images]
     return converted

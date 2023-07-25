@@ -8,7 +8,7 @@ with open('README.md') as f:
 
 setup(
     name='social_collage',
-    version='0.9.2',
+    version='0.9.3',
     packages=['social_collage'],
     description='Create image collages in social networks style',
     long_description=long_description,
