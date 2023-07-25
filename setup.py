@@ -8,7 +8,7 @@ with open('README.md') as f:
 
 setup(
     name='social_collage',
-    version='0.9.3',
+    version='1.0.0',
     packages=['social_collage'],
     package_data={'social_collage': ['example_images/*.jpg']},
     description='Create image collages in social networks style',
@@ -33,3 +33,8 @@ setup(
     ],
     python_requires='>=3.6',
 )
+
+# Publish new version:
+# - change version in __init__.py and in setup.py, commit
+# - run 'python setup.py sdist'
+# - run 'twine upload dist/social_collage-{}.tar.gz'

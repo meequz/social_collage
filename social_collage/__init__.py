@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image
 
 
-__version__ = '0.9.3'
+__version__ = '1.0.0'
 __author__ = 'Mikhail Varantsou'
 
 

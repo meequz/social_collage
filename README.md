@@ -2,6 +2,11 @@
 
 Small and straightforward library based on PIL to create image collages similar to those in social networks.
 
+## Installation
+```
+pip install social_collage
+```
+
 ## Usage
 ```
 import social_collage
@@ -10,14 +15,14 @@ images = [...]
 collage = social_collage.collage_5_1(images)
 collage.save(...)
 ```
-Currently available functions are: `collage_3_1`, `collage_4_1`, `collage_4_2`, `collage_5_1`.
+Currently available collage functions are: `collage_3_1`, `collage_4_1`, `collage_4_2`, `collage_5_1`.
 
 Arguments, applicable to any collage function:
 
  - `images` - list of PIL objects
  - `ratio=7/4` - required ratio of each image inside the collage. Default value is different for each function
  - `bgcolor=(255, 255, 255, 255)` - color of the background in RGBA format
- - `spaceshare=150` - share of the first image width to use as a space size. 0 or None means no space
+ - `spaceshare=150` - share of the first image width to use as a space size. 0 or None means no space between images
 
 ## Example
 *replace path with your own, or use files from "package/example_images"*
@@ -53,13 +58,13 @@ social_collage.example()
 ## Results
 
 ### collage_3_1
-
+![collage_3_1](https://github.com/meequz/social_collage/blob/main/readme_images/collage_3_1.jpg?raw=true)
 
 ### collage_4_1
-
+![collage_4_1](https://github.com/meequz/social_collage/blob/main/readme_images/collage_4_1.jpg?raw=true)
 
 ### collage_4_2
-
+![collage_4_2](https://github.com/meequz/social_collage/blob/main/readme_images/collage_4_2.jpg?raw=true)
 
 ### collage_5_1
-
+![collage_5_1](https://github.com/meequz/social_collage/blob/main/readme_images/collage_5_1.jpg?raw=true)
